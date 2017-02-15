@@ -84,7 +84,7 @@ SENTRY_USE_BIG_INTS = True
 
 # Instruct Sentry that this install intends to be run by a single organization
 # and thus various UI optimizations should be enabled.
-SENTRY_SINGLE_ORGANIZATION = env('SENTRY_SINGLE_ORGANIZATION', True)
+SENTRY_SINGLE_ORGANIZATION = env('SENTRY_SINGLE_ORGANIZATION', False)
 
 #########
 # Redis #

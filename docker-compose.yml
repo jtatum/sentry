@@ -58,15 +58,13 @@ services:
      - pgdb:/var/lib/postgresql/data
 
   sentry:
-    image: sentry:latest
+    image: jtatum/sentry:latest
     depends_on:
      - redis
      - postgres
     links:
      - redis
      - postgres
-    volumes:
-     - ./conf:/etc/sentry
     env_file: 
      - sentry.env
      - vhost.env
